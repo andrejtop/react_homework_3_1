@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+.card-body-stars {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 180px;
+    height: 80px;
+    border: 1px solid #000000;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 1px 3px 6px 0px #5a4231;
+    list-style: none;
   }
-  to {
-    transform: rotate(360deg);
+  
+.card-body-stars::before {
+    width: 100%;
+    content: 'Рейтинг Фильма';
+    font-weight: bold;
+    font-size: 18px;
   }
-}
+  
+.card-body-stars li {
+    margin-top: 10px;
+  }
